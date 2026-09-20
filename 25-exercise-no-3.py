@@ -1,29 +1,29 @@
-# name = []
-# q1 = input("Enter your name :")
+name = []
+q1 = input("Enter your name :")
 
-# if q1.isalpha() or q1.isdigit():
-#     for char in q1:
-#         name.append(char)
+if q1.isalpha() or q1.isdigit():
+    for char in q1:
+        name.append(char)
     
-#     name.reverse()
-#     join_Method = "".join(name)
-#     print(join_Method)
-# else:
-#     print("Invalid input! ")
+    name.reverse()
+    join_Method = "".join(name)
+    print(join_Method)
+else:
+    print("Invalid input! ")
 
 
-# name = []
-# q1 = input("Enter your name :")
+name = []
+q1 = input("Enter your name :")
 
-# if q1.isalpha() or q1.isdigit():
-#     for char in q1:
-#         name.append(char)
+if q1.isalpha() or q1.isdigit():
+    for char in q1:
+        name.append(char)
     
-#     name.reverse()
-#     join_Method = "".join(name)
-#     print(join_Method)
-# else:
-#     print("Invalid input! ")
+    name.reverse()
+    join_Method = "".join(name)
+    print(join_Method)
+else:
+    print("Invalid input! ")
 
 
 def reverse_my_string():
