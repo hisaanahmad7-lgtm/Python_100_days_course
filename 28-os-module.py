@@ -1,26 +1,26 @@
 import os
 
-
-# print(os.getcwd())  # Output: /home/user/project
-# if os.getcwd() == "/home/hisaan/Documents":
-#     print("you are in correct directory")
-# else:
-#     print("Invalid directory")
-
-
-# os.chdir('/home/hisaan/Desktop')
+print("__________This file is danger execute this on your own risk (Thank you) __________")
+print(os.getcwd())  # Output: /home/user/project
+if os.getcwd() == "/home/hisaan/Documents":
+    print("you are in correct directory")
+else:
+    print("Invalid directory")
 
 
-# print(os.getcwd()) 
-# print(os.listdir('.'))  
-# # os.mkdir('command_folder',exist_ok=True)
-# os.makedirs('parent/child/grandchild')
-# # os.rmdir('my_folder')
-# # os.removedirs('parent/child/grandchild')
-# os.rename('C Folder', 'parent')
-# print(os.environ.get('HOME'))
-# print(os.getpid()) # Give ID of currently processed files
-# path = os.path.join('folder', 'file.txt')  # 'folder/file.txt'
+os.chdir('/home/hisaan/Desktop')
+
+
+print(os.getcwd()) 
+print(os.listdir('.'))  
+# os.mkdir('command_folder',exist_ok=True)
+os.makedirs('parent/child/grandchild')
+# os.rmdir('my_folder')
+# os.removedirs('parent/child/grandchild')
+os.rename('C Folder', 'parent')
+print(os.environ.get('HOME'))
+print(os.getpid()) # Give ID of currently processed files
+path = os.path.join('folder', 'file.txt')  # 'folder/file.txt'
 
 
 
