@@ -1,93 +1,93 @@
-# def counter():
-#     x = 1
-#     print("start")
-#     yield x
-#     x += 1
-#     print("resumed")
-#     yield x
+def counter():
+    x = 1
+    print("start")
+    yield x
+    x += 1
+    print("resumed")
+    yield x
 
-# gen = counter()
-# print(next(gen))
-# print(next(gen))
-
-
-
-
-
-
-# def count_up_to(n):
-#     num = 1
-#     while num <= n:
-#         yield num
-#         num += 1
-
-# for value in count_up_to(5):
-#     print(value)
-
-
-
-
-# import sys
-
-# def normal_list(n):
-#     result = []
-#     for i in range(n):
-#         result.append(i)
-#     return result
-#     # for t in range(n):
-#     #     print(t)
-
-# def generator_func(n):
-#     for i in range(n):
-#         yield i
-
-# normal = normal_list(1000000)
-# gen = generator_func(1000000)
-
-# print(sys.getsizeof(normal))
-# print(sys.getsizeof(gen))
+gen = counter()
+print(next(gen))
+print(next(gen))
 
 
 
 
 
-# def infinite_counter():
-#     num = 1
-#     while True:
-#         yield num
-#         num += 1
 
-# counter = infinite_counter()
-# for i in range(6):
-#     print(next(counter))
+def count_up_to(n):
+    num = 1
+    while num <= n:
+        yield num
+        num += 1
 
-
-
-# squares_list = [x**2 for x in range(5)]
-# squares_gen  = (x**2 for x in range(5))
-
-# print(squares_list)
-# print(squares_gen)
-# print(list(squares_gen))
+for value in count_up_to(5):
+    print(value)
 
 
 
 
-# def numbers():
-#     yield 1
-#     yield 2
-#     yield 3
+import sys
 
-# def letters():
-#     yield 'a'
-#     yield 'b'
+def normal_list(n):
+    result = []
+    for i in range(n):
+        result.append(i)
+    return result
+    # for t in range(n):
+    #     print(t)
 
-# def combined():
-#     yield from numbers()
-#     yield from letters()
+def generator_func(n):
+    for i in range(n):
+        yield i
 
-# for item in combined():
-#     print(item)
+normal = normal_list(1000000)
+gen = generator_func(1000000)
+
+print(sys.getsizeof(normal))
+print(sys.getsizeof(gen))
+
+
+
+
+
+def infinite_counter():
+    num = 1
+    while True:
+        yield num
+        num += 1
+
+counter = infinite_counter()
+for i in range(6):
+    print(next(counter))
+
+
+
+squares_list = [x**2 for x in range(5)]
+squares_gen  = (x**2 for x in range(5))
+
+print(squares_list)
+print(squares_gen)
+print(list(squares_gen))
+
+
+
+
+def numbers():
+    yield 1
+    yield 2
+    yield 3
+
+def letters():
+    yield 'a'
+    yield 'b'
+
+def combined():
+    yield from numbers()
+    yield from letters()
+
+for item in combined():
+    print(item)
 
 
 
