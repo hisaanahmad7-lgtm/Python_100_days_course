@@ -243,5 +243,5 @@ my_teacher2 = tech2("Hisaan Ahmad" , 100000000 , "Computer")
 principle(my_teacher2.intro_to_tech2())
 my_teacher2.intro_to_salary()
 
-
+print("I am a good boy")
 
