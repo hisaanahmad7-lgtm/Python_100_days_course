@@ -1,9 +1,9 @@
-import threading
-import time
+# import threading
+# import time
 
-# def crawl(link, delay=3):
+# def crawl(link):
 #     print(f"crawl started for {link}")
-#     time.sleep(delay) 
+#     time.sleep(2) 
 #     print(f"crawl ended for {link}")
 
 # links = [
@@ -14,7 +14,7 @@ import time
 
 # threads = []
 # for link in links:
-#     t = threading.Thread(target=crawl, args=(link,), kwargs={"delay": 2})
+#     t = threading.Thread(target=crawl, args=(link ,))
 #     threads.append(t)
 
 # for t in threads:
@@ -67,35 +67,47 @@ import time
 #     t.start()
 
 
-images = [
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUdq-AkHlxZ5TMi-24_3FY5sjyghkdCOqrCFoHJD85kw&s=10",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0IF7_S3-5d_HUUod_-WjRHcTvpvvsEP35iCWtPEmgPw&s=10",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTubeVF81Z5Ce73wysbMbRg0U3C8uFP-MQC_sWLExfWfw&s=10",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvOpBqSLjjbVd5aoxLZm_ECBjlXZW7SFxwGAaSgLzfTg&s=10"
+# images = [
+#     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUdq-AkHlxZ5TMi-24_3FY5sjyghkdCOqrCFoHJD85kw&s=10",
+#     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0IF7_S3-5d_HUUod_-WjRHcTvpvvsEP35iCWtPEmgPw&s=10",
+#     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTubeVF81Z5Ce73wysbMbRg0U3C8uFP-MQC_sWLExfWfw&s=10",
+#     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvOpBqSLjjbVd5aoxLZm_ECBjlXZW7SFxwGAaSgLzfTg&s=10"
+# ]
+
+
+
+# def process_image(url):
+#     print(f"Starting download: {url[:40]}...")
+#     time.sleep(1) 
+#     print(f"Finished download: {url[:40]}...")
+
+# threads = []
+
+
+# for img_url in images:
+#     t = threading.Thread(target=process_image, args=(img_url,))
+#     threads.append(t)
+
+
+# for t in threads:
+#     t.start()
+
+# for t in threads:
+#     t.join()
+
+# print("All images processed successfully!")
+
+
+
+l1 = [
+    [1,2,3,4,5],
+    ["mango" , "Banana" , "Apple"],
+    ["Hisaan", "Ahmad" , "Zain"]
 ]
+for char in l1:
+    print(char)
 
 
-
-def process_image(url):
-    print(f"Starting download: {url[:40]}...")
-    time.sleep(1) # Simulating network download delay
-    print(f"Finished download: {url[:40]}...")
-
-threads = []
-
-
-for img_url in images:
-    # 2. Set the correct target function and pass the image URL as an argument
-    t = threading.Thread(target=process_image, args=(img_url,))
-    # 3. Append the THREAD object, not the URL string
-    threads.append(t)
-
-# Start all threads
-for t in threads:
-    t.start()
-
-# Wait for all threads to complete
-for t in threads:
-    t.join()
-
-print("All images processed successfully!")
+for newchar in l1:
+    for mynewchar in newchar:
+        print(mynewchar)
