@@ -1,4 +1,4 @@
-from multiprocessing import Pool , Process
+from multiprocessing import Pool , Process , Pipe
 import os
 
 def f(x):
@@ -24,4 +24,18 @@ if __name__ == '__main__':
     info('main line')
     p = Process(target=f, args=('bob',))
     p.start()
+    p.join()
+
+
+
+
+def f(conn):
+    conn.send([42, None, 'hello'])
+    conn.close()
+
+if __name__ == '__main__':
+    parent_conn, child_conn = Pipe()
+    p = Process(target=f, args=(child_conn,))
+    p.start()
+    print(parent_conn.recv())  
     p.join()
