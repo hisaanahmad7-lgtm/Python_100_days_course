@@ -78,7 +78,29 @@
 
 # Problem no 7 
 
+# for i in range(1, 6):
+#     for j in range(i):
+#         # i = i-1
+#         print("*", end="")
+
+
+# # Problem no 8
+# for i in range(1 , 4):    
+#     if i == 1:
+#         print(" *  *")
+#     else:
+#         print("* * *")
+
+# # Problem no 9
+
 for i in range(1, 6):
-    for j in range(i):
-        # i = i-1
-        print("*")
+    for j in range(6 - i):
+        print("*", end="")
+    print() 
+
+
+print("\n")
+for i in range(0 + i):
+    for j in range(1 , 6):
+        print("*", end="")
+    print() 
