@@ -1,0 +1,28 @@
+FROM python:3.11-slim
+
+# Work directory set karein
+WORKDIR /workspace
+
+# System packages aur Git install karein
+RUN apt-get update && apt-get install -y \
+    git \
+    curl \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Upgrade pip
+RUN pip install --no-cache-dir --upgrade pip
+
+# Common Python course packages install karein
+RUN pip install --no-cache-dir \
+    numpy \
+    pandas \
+    matplotlib \
+    seaborn \
+    fastapi \
+    uvicorn \
+    requests \
+    pytest
+
+EXPOSE 8000
+CMD ["bash"]

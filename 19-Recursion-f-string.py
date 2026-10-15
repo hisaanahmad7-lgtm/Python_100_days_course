@@ -1,14 +1,21 @@
 import time
-
-def countdown(n):
-    ''' i am a doc string'''
-    while n >= 0:
-        print("Time remaines is " , n)
-        n = (n-1)
-        time.sleep(1)
-    else:
-        print("Blast off! " , __doc__)
-countdown(5)
+from functools import lru_cache
+# def countdown(n):
+#     ''' i am a doc string'''
+#     while n >= 0:
+#         print("Time remaines is " , n)
+#         n = (n-1)
+#         time.sleep(1)
+#     else:
+#         print("Blast off! " , __doc__)
+# countdown(5)
+@lru_cache
+def my_count_Down(n):
+    while n>0:
+        print("Blast...")
+        time.sleep(2)
+        n = (n - 1)
+my_count_Down(5)
 
 
 def factorial(n):
