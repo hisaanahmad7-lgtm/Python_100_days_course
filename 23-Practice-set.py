@@ -1,6 +1,6 @@
 q1 = input("Enter your name : ")
 q2 = "Good Morning"
-print(f"{q2} How are you {q1}" , q1.title())
+print(f"{q2} How are you {q1.title()}")
 
 a1 = input("Enter your name : ")
 a1.title()
@@ -19,7 +19,7 @@ else:
 text = "Hello  Hisaan"
 if "  " in text:
     print("yes")
-    print(text.replace("  " , "Empty_Space"))
+    print(text.replace("  " , "(Empty_Space)"))
 else:
     print("no")
 
