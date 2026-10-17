@@ -1,3 +1,4 @@
-i am hisaan ahmad
-i am a good boy
-i am studying cs
+Python File I/O Demonstration
+Line 1: Learning file handling.
+Line 2: Writing and reading data.
+Now i am going to be death the destroy of the world...I'm possible says i am possible...

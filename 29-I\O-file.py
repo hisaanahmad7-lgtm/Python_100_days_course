@@ -1,11 +1,12 @@
 import os
 print("_________First make myfile.txt file write something in it and then execute this code___________")
-filename = "myfile.txt"
+filename = "1st.txt"
 
 with open(filename, "w") as file:
     file.write("Python File I/O Demonstration\n")
     file.write("Line 1: Learning file handling.\n")
     file.write("Line 2: Writing and reading data.\n")
+# print(file)
 
 lines_to_append = [
     "Line 3: Appending new content.\n",
