@@ -1,33 +1,33 @@
-# class person:
-#     name = "Hisaan"
-#     occopution = "A.I Engennier"
-#     net_worth = 150
-#     def info(intro):
-#         print(f"{intro.name} is a {intro.occopution}")
+class person:
+    name = "Hisaan"
+    occopution = "A.I Engennier"
+    net_worth = 150
+    def info(intro):
+        print(f"{intro.name} is a {intro.occopution}")
 
 
-# a = person()
-# b = person()
-# c = person()
-# a.info()
+a = person()
+b = person()
+c = person()
+a.info()
 
-# a.name = 'Ahmad'
-# a.occopution = "ML Eng"
-# print(a.name , a.occopution)
-
-
-# b.name = 'Zain Ali'
-# b.occopution = "Website Developer"
-# print(b.name , b.occopution)
+a.name = 'Ahmad'
+a.occopution = "ML Eng"
+print(a.name , a.occopution)
 
 
-# c.name = 'Haris Ali Khan'
-# c.occopution = "Pro youtuber"
-# print(c.name , c.occopution)
+b.name = 'Zain Ali'
+b.occopution = "Website Developer"
+print(b.name , b.occopution)
 
-# a.info()
-# b.info()
-# c.info()\
+
+c.name = 'Haris Ali Khan'
+c.occopution = "Pro youtuber"
+print(c.name , c.occopution)
+
+a.info()
+b.info()
+c.info()
 
 
 

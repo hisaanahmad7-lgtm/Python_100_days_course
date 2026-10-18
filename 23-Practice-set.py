@@ -16,7 +16,7 @@ else:
 
 
 
-text = "Hello  Hisaan"
+text = "Hello Hisaan"
 if "  " in text:
     print("yes")
     print(text.replace("  " , "(Empty_Space)"))

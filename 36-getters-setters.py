@@ -1,47 +1,47 @@
-# class Mycalss:
-#     def __init__(self, name):
-#         self._name = name 
-#     def show(self):
-#         print(f"Name is {self._name} ")
-#     @property
-#     def value(self):
-#         return self._value
+class Mycalss:
+    def __init__(self, name):
+        self._name = name 
+    def show(self):
+        print(f"Name is {self._name} ")
+    @property
+    def value(self):
+        return self._value
 
-# obj = Mycalss("Hisaan")      
-# obj.show()
-
-
-# class myintro:
-#     def __init__(self , n , m ,o):
-#         self.name = n
-#         self.occo = m
-#         self.age = o
-#     def intro(self):
-#         print(f"{self.name} is a good {self.occo} and his/her age is {self.age}")
-# newobj = myintro("Hisaan" , "A.I Engennier" , 18)
-# newobj.intro()
+obj = Mycalss("Hisaan")      
+obj.show()
 
 
-# class employee:
-#     def __init__(self , m , n):
-#         self._name = m
-#         self._occo = n
+class myintro:
+    def __init__(self , n , m ,o):
+        self.name = n
+        self.occo = m
+        self.age = o
+    def intro(self):
+        print(f"{self.name} is a good {self.occo} and his/her age is {self.age}")
+newobj = myintro("Hisaan" , "A.I Engennier" , 18)
+newobj.intro()
 
-#     def intro(self):
-#         print(f"{self._name} is good {self._occo}")
 
-#     @property
-#     def My_intro(self):
-#         return 5*self._name
-#     @My_intro.setter
-#     def My_intro(self , new_value):
-#         self.My_intro = new_value/4
+class employee:
+    def __init__(self , m , n):
+        self._name = m
+        self._occo = n
 
-# q1 = employee("Hisaan" , "ML Engennier")
-# q1.intro()
-# print(q1._name)
-# print(q1._occo)
-# print(q1.My_intro)
+    def intro(self):
+        print(f"{self._name} is good {self._occo}")
+
+    @property
+    def My_intro(self):
+        return 5*self._name
+    @My_intro.setter
+    def My_intro(self , new_value):
+        self.My_intro = new_value/4
+
+q1 = employee("Hisaan" , "ML Engennier")
+q1.intro()
+print(q1._name)
+print(q1._occo)
+print(q1.My_intro)
 
 class emp_salary:
     def __init__(self , emp1 , emp2 , emp3):

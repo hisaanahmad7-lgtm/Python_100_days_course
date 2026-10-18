@@ -9,8 +9,10 @@ with open(filename, "w") as file:
 print("File successfully Created..!\n")
 
 my_lines = [
-    "Now i am going to be death the destroy of the world...",
+    "Now i am going to be death the destroy of the world...\n",
     "I'm possible says i am possible..."
 ]
 with open(filename , "a") as my_file:
     my_file.writelines(my_lines)
+
+print("This file is added successfuly....")

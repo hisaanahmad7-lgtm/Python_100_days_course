@@ -1,30 +1,30 @@
 
-# class person:
-#     def __init__(self , n, p):
-#         print("Hy i am a good person")
-#         self.name = n
-#         self.occo = p
+class person:
+    def __init__(self , n, p):
+        print("Hy i am a good person")
+        self.name = n
+        self.occo = p
 
-#     def info(self):
-#         print(f"{self.name} is a {self.occo}")
+    def info(self):
+        print(f"{self.name} is a {self.occo}")
 
-# a = person("Harry" , "Developer")
-# b = person("Ahamd" , "A.I Engennier")
-# a.info()
-# b.info()
+a = person("Harry" , "Developer")
+b = person("Ahamd" , "A.I Engennier")
+a.info()
+b.info()
 
 
-# class students:
-#     def __init__(self , n, a, c):
-#         self.name = n
-#         self.age = a
-#         self.course = c
+class students:
+    def __init__(self , n, a, c):
+        self.name = n
+        self.age = a
+        self.course = c
 
-#     def info(self):
-#         print(f"{self.name} is {self.age} years old and is enrolled in {self.course} course.")
+    def info(self):
+        print(f"{self.name} is {self.age} years old and is enrolled in {self.course} course.")
 
-# c = students("Hisaan", 20, "A.I Engennier")
-# c.info()
+c = students("Hisaan", 20, "A.I Engennier")
+c.info()
 
 
 
