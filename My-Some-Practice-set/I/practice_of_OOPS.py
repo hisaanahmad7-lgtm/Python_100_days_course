@@ -28,13 +28,13 @@ class subStudents(student):
 
     @property
     def iqlevels(self):
-        return self.iqlevel
+        return self._iqlevel
 
     @iqlevels.setter
     def iqlevel(self , values):
         if values < 0 or values > 200:
             raise ValueError("Invalid iq_level")
-        self.iqlevel = values
+        self._iqlevel = values
 
 q1 = student("Hisaan ahamd", "Housing colony no 2", 13, 130)
 q1.intro_to_student()
