@@ -33,6 +33,7 @@ def normal_list(n):
     result = []
     for i in range(n):
         result.append(i)
+        yield i
     return result
     # for t in range(n):
     #     print(t)
