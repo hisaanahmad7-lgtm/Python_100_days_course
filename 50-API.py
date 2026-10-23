@@ -43,7 +43,7 @@ import http.client
 
 conn = http.client.HTTPSConnection("meteostat.p.rapidapi.com")
 
-headers = {import requests
+headers = import requests
 
 url = "https://claude.ai/chat/3b0f7c49-0108-4c5b-9476-f58e3a254fb2"
 q1 = requests.get(url)
