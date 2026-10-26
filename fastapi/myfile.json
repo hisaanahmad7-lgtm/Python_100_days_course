@@ -1,0 +1,57 @@
+{
+    "emp1": {
+        "id": 101,
+        "name": "Ali Khan",
+        "designation": "Software Engineer",
+        "department": "IT",
+        "salary": 120000,
+        "weight": 60,
+        "height": 6.4,
+        "bmi": 9,
+        "verdict": "UnderWeight"
+    },
+    "emp2": {
+        "id": 102,
+        "name": "Sara Ahmed",
+        "designation": "Data Analyst",
+        "department": "Analytics",
+        "salary": 95000,
+        "weight": 58.7,
+        "height": 5.4,
+        "bmi": 35,
+        "verdict": "obese"
+    },
+    "emp3": {
+        "id": 103,
+        "name": "Usman Tariq",
+        "designation": "UI/UX Designer",
+        "department": "Design",
+        "salary": 85000,
+        "weight": 48,
+        "height": 5.4,
+        "bmi": 40,
+        "verdict": "obese"
+    },
+    "emp4": {
+        "id": 104,
+        "name": "Ayesha Bilal",
+        "designation": "HR Manager",
+        "department": "Human Resources",
+        "salary": 110000,
+        "weight": 60,
+        "height": 7.4,
+        "bmi": 120,
+        "verdict": "UnderWeight"
+    },
+    "emp5": {
+        "id": 105,
+        "name": "Hamza Raza",
+        "designation": "DevOps Engineer",
+        "department": "Infrastructure",
+        "salary": 130000,
+        "weight": 45,
+        "height": 4.4,
+        "bmi": 27,
+        "verdict": "normal"
+    }
+  }

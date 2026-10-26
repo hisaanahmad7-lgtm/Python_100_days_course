@@ -27,29 +27,29 @@ async def greet3():
     await asyncio.sleep(2)
     print("Hello Hisaan how are you!")
 
-# async def main2():
-#     await asyncio.gather(greet(), greet2(), greet3())
+async def main2():
+    await asyncio.gather(greet(), greet2(), greet3())
 
-async def main():
-    await greet()
-    await greet2()
-    await greet3()
+# async def main():
+#     await greet()
+#     await greet2()
+#     await greet3()
 
 # asyncio.run(main())
-# asyncio.run(main2())
+asyncio.run(main2())
 
 
 
-async def sqrt(n):
-    await asyncio.sleep(3)
-    return n * n
+# async def sqrt(n):
+#     await asyncio.sleep(3)
+#     return n * n
 
-async def result():
+# async def result():
 
-    output = await asyncio.gather(sqrt(5), sqrt(4))  
+#     output = await asyncio.gather(sqrt(5), sqrt(4))  
     
-    print("The square of 5 is", output[0])
-    print("The square of 4 is", output[1])
+#     print("The square of 5 is", output[0])
+#     print("The square of 4 is", output[1])
 
 
-asyncio.run(result())
+# asyncio.run(result())
