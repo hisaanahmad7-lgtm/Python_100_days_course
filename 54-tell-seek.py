@@ -1,4 +1,4 @@
-with open("main.txt", "r") as file:
+with open("1st.txt", "r") as file:
 
     file.seek(10)
     print(file.tell())
@@ -6,3 +6,5 @@ with open("main.txt", "r") as file:
     data = file.read(5)
     
     print(data)  
+
+    print("End\n" * 15)
