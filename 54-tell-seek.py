@@ -7,4 +7,4 @@ with open("1st.txt", "r") as file:
     
     print(data)  
 
-    print("End\n" * 15)
+    print("End" * 15)

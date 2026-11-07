@@ -40,16 +40,16 @@ asyncio.run(main2())
 
 
 
-# async def sqrt(n):
-#     await asyncio.sleep(3)
-#     return n * n
+async def sqrt(n):
+    await asyncio.sleep(3)
+    return n * n
 
-# async def result():
+async def result():
 
-#     output = await asyncio.gather(sqrt(5), sqrt(4))  
+    output = await asyncio.gather(sqrt(5), sqrt(4))  
     
-#     print("The square of 5 is", output[0])
-#     print("The square of 4 is", output[1])
+    print("The square of 5 is", output[0])
+    print("The square of 4 is", output[1])
 
 
-# asyncio.run(result())
+asyncio.run(result())
