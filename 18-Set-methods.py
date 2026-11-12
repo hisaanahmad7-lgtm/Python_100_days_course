@@ -47,7 +47,7 @@ farq_items = set_a.difference(set_b)
 print(farq_items)
 
 
-# issubset(): Yeh check karta hai ke kya ek chote set ke saare items bade set me maujood hain ya nahi. Yeh hume True ya False jawab deta hai.
+
 big_set = {1, 2, 3, 4, 5}
 small_set = {2, 4}
 
@@ -60,7 +60,7 @@ mySet = {12,12,12,12,33,44,"Hisaan","Zain","Ali"}
 print(len(mySet))
 for set in mySet:
     if len(mySet) == 7:
-        print("Wow Awsome!")
+        print("Wow Awesome!")
     else:
         print(set)
 

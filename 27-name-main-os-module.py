@@ -13,5 +13,5 @@ import os
 # app.py
 import helper
 
-print("App file run ho rahi hai.")
+print("App file is running....")
 helper.say_hello()

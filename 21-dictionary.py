@@ -4,6 +4,10 @@ q1 = {
     "Subjects" : "Computer",
     "Title" : "Upper"
 }
+for alpha in q1.keys():
+    print(alpha.capitalize())
+
+
 print(q1)
 print(q1.keys())
 print(q1.values())
@@ -22,7 +26,7 @@ for keyys in q1.keys():
 
 
 q2 = {"Class" :12 , "Sub" : "Comp" , "Program" : "Python"}
-print(q1.setdefault("Class"))
+print("Set default class is " , q1.setdefault("Comp"))
 
 
 

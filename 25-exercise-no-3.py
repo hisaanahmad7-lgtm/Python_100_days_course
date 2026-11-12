@@ -1,7 +1,9 @@
-name = []
-q1 = input("Enter your name :")
 
-if q1.isalpha() or q1.isdigit():
+q1 = input("Enter your name :").lower()
+name = []
+print(q1)
+
+if q1.isalpha() or q1.isdigit() or q1.isprintable():
     for char in q1:
         name.append(char)
     
